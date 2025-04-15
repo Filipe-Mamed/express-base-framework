@@ -11,7 +11,7 @@ Facilitar o desenvolvimento de aplicações Node.js, fornecendo uma base pré-co
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git
+   git clone https://github.com/Filipe-Mamed/express-base-framework.git
    ```
 
 2. Instale as dependências com `npm install`.
