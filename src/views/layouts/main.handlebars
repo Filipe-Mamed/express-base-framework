@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  {{> navbar}} <!-- Partial de navbar Ser precisar-->
+
+  <main>
+    {{{body}}} <!-- Aqui será injetado o conteúdo da view -->
+  </main>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
+{{!-- Fim do arquivo main.handlebars --}}
+{{!-- Este é o layout principal da aplicação. --}}
+{{!-- Ele inclui o cabeçalho, o corpo e o rodapé. --}}
+{{!-- O conteúdo específico de cada página será injetado na seção {{{body}}}. --}}
+{{!-- O arquivo CSS e o script JavaScript são incluídos para estilização e funcionalidade. --}}
+{{!-- A navbar é um partial que será incluído em todas as páginas. --}}
+{{!-- O título da página é dinâmico e pode ser definido em cada view. --}}

@@ -1,0 +1,10 @@
+# Dependências
+node_modules
+# Keep environment variables out of version control
+.env
+
+# Logs de execução
+*.log
+
+# Pastas de editor
+.vscode/
