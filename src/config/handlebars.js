@@ -1,6 +1,6 @@
 import { fileURLToPath } from "url";
 import { dirname } from "path";
-import path from "path"; // Certifique-se de importar o 'path' antes de usá-lo
+import path from "path";
 import { engine } from "express-handlebars";
 
 // Obtém o caminho do diretório atual
