@@ -1,18 +1,23 @@
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+import path from "path"; // Certifique-se de importar o 'path' antes de usá-lo
 import { engine } from "express-handlebars";
-import path from "path";
+
+// Obtém o caminho do diretório atual
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const Handlebars = (app) => {
   app.engine(
     "handlebars",
     engine({
-      defaultLayout: "main", // Layout padrão
+      defaultLayout: "main",
       layoutsDir: path.join(__dirname, "..", "views", "layouts"), // Caminho para 'views/layouts'
-      partialsDir: path.join(__dirname, "..", "views", "partials"), // Caminho para 'views/partials'
+      partialsDir: path.join(__dirname, "..", "views", "partials"),
     })
   );
-
   app.set("view engine", "handlebars");
-  app.set("views", path.join(__dirname, "..", "views")); // Caminho para 'views'
+  app.set("views", path.join(__dirname, "..", "views"));
 };
 
 export default Handlebars;
